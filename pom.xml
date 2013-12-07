@@ -4,7 +4,7 @@
 	<groupId>org.woehlke</groupId>
 	<artifactId>addresslist</artifactId>
 	<packaging>war</packaging>
-	<version>1.0.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>addresslist</name>
 	<url>http://www.thomas-woehlke.de/p/addresslist</url>
 	<properties>
@@ -324,7 +324,7 @@
 		<developerConnection>scm:git:https://github.com/phasenraum2010/addresslist.git</developerConnection>
   </scm>
 	<issueManagement>
-		<url>https://github.com/phasenraum2010/simpleworklist/issues</url>
+		<url>https://github.com/phasenraum2010/addresslist/issues</url>
 		<system>GitHub Issues</system>
 	</issueManagement>
 	<distributionManagement>

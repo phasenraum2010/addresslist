@@ -8,4 +8,6 @@ public interface AddressService {
 
 	List<Address> getAllAddresses();
 
+	void delete(long id);
+
 }

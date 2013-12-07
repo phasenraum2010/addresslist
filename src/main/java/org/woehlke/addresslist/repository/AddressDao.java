@@ -8,4 +8,6 @@ public interface AddressDao {
 
 	List<Address> getAll();
 
+	void delete(long id);
+
 }

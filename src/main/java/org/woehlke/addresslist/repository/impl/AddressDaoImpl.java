@@ -24,4 +24,10 @@ public class AddressDaoImpl implements AddressDao {
 		return list;
 	}
 
+	@Override
+	public void delete(long id) {
+		Address address = em.find(Address.class, id);
+		em.remove(address);
+	}
+
 }
