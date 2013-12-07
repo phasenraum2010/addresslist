@@ -1,17 +1,25 @@
 package org.woehlke.addresslist.services.impl;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.List;
+
+import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
 import org.woehlke.addresslist.entities.Address;
+import org.woehlke.addresslist.repository.AddressDao;
 import org.woehlke.addresslist.services.AddressService;
 
 @Service
 public class AddressServiceImpl implements AddressService {
 
+	@Inject
+	private AddressDao addressDao;
+	
 	@Override
 	public List<Address> getAllAddresses() {
+		List<Address> allAddresses = addressDao.getAll();
+		/*
 		List<Address> allAddresses = new ArrayList<Address>();
 		Address a1 = new Address();
 		a1.setName("Alfons Wupdidupp");
@@ -34,6 +42,7 @@ public class AddressServiceImpl implements AddressService {
 		allAddresses.add(a1);
 		allAddresses.add(a2);
 		allAddresses.add(a3);
+		*/
 		return allAddresses;
 	}
 
