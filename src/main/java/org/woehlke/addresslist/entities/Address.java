@@ -5,6 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 public class Address {
@@ -13,18 +16,28 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
+	@NotNull(message = "Name is mandantory")
+    @NotBlank(message = "Name is mandantory")
 	@Column
 	private String name;
 	
+	@NotNull(message = "street is mandantory")
+    @NotBlank(message = "street is mandantory")
 	@Column
 	private String street;
 	
+	@NotNull(message = "houseNumber is mandantory")
+    @NotBlank(message = "houseNumber is mandantory")
 	@Column
 	private String houseNumber;
 	
+	@NotNull(message = "Zip is mandantory")
+    @NotBlank(message = "Zip is mandantory")
 	@Column
 	private String zip;
 	
+	@NotNull(message = "City is mandantory")
+    @NotBlank(message = "City is mandantory")
 	@Column
 	private String city;
 

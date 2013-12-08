@@ -10,4 +10,6 @@ public interface AddressService {
 
 	void delete(long id);
 
+	void addNewAddress(Address address);
+
 }

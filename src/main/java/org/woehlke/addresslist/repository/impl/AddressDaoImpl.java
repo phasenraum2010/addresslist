@@ -30,4 +30,12 @@ public class AddressDaoImpl implements AddressDao {
 		em.remove(address);
 	}
 
+	@Override
+	public Address addNewAddress(Address address) {
+		em.persist(address);
+		return address;
+	}
+	
+	
+
 }

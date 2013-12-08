@@ -10,4 +10,6 @@ public interface AddressDao {
 
 	void delete(long id);
 
+	Address addNewAddress(Address address);
+
 }
