@@ -35,7 +35,6 @@ public class AddressServiceImpl implements AddressService {
 	@Transactional(propagation=Propagation.REQUIRES_NEW,readOnly=false)
 	public void addNewAddress(Address address) {
 		address=addressDao.addNewAddress(address);
-		
 	}
 	
 }
