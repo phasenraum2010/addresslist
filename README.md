@@ -59,4 +59,5 @@ GRANT ALL PRIVILEGES ON addresslist\_%.* TO 'addresslist'@'localhost';
 
 Startup
 -------
-mvn clean install tomcat7:run
+* mvn clean install tomcat7:run
+* open Browser: http://localhost:8080/addresslist
